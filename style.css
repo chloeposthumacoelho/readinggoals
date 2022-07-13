@@ -1,0 +1,45 @@
+:root {
+  --light-gray: #a0a3a7;
+  --light-blue: #1b9ce2;
+}
+
+body {
+  background-color: #d3def3;
+  margin: 0;
+}
+
+.container {
+  background-color: #faf0f0df;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.day {
+  border: 1px solid var(--light-gray);
+  text-align: center;
+  padding-top: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.name {
+  padding-bottom: 5px;
+}
+.weekend {
+  color: var(--light-blue);
+}
+
+.selected {
+  background-color: var(--light-blue);
+  color: white;
+}
+
+#app-calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  height: 100%;
+}
